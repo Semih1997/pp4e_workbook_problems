@@ -1,25 +1,14 @@
 def capitalize_sentence(sentence):
-    sentence = sentence.capitalize()
-    new_sentence = ""
-    i = 0
-    while i in range(len(sentence)):
-        if sentence[i].isalpha():
-            word = ""
-            i_adding = 0
-            for j in range(500):
-                if sentence[i:][j].isalpha():
-                    word += sentence[i:][j]
-                    i_adding += 1
-                else:
-                    if not(word[len(word) - 1].isalpha()):
-                        word = word.capitalize()
-                        new_sentence += word
-                    else:
-                        new_sentence += word
-                    i += i_adding
-                    break
-        else:
-            i += 1
-    return new_sentence
+    capital_sign = ["!",".","?"]
+    sentence_list = list(sentence)
+    for i in range(len(sentence)):
+        if i == 0:
+            sentence_list[i] = str(sentence[i].upper())
+            print("1")
+        elif sentence[i] == " ":
+            if sentence[i-1] in capital_sign:
+                sentence_list[i+1] = str(sentence[i+1].upper())
+    return "".join(sentence_list)
+print(capitalize_sentence('string methods are really useful in Python! you need to know them to succeed in CENG240.'))
+print("-----")
 print(capitalize_sentence('lorem. ipsum? dolor sit amet, consectetur! adipiscing elit.'))
-        
