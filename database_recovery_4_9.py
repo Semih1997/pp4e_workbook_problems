@@ -2,13 +2,15 @@ def reinstall(db):
     i = 0
     final_data_base_keys = []
     final_data_base_values = []
+    
     while i in range(len(db)):
-        if db[i].isalpha() == True:
+        
+        if db[i].isalpha():
             name = ""
             i_adding = 0
-            for j in range(500):
-                if db[i:][j].isalpha() == True:
-                    name += db[i:][j]
+            while i_adding in range(500):
+                if db[i:][i_adding].isalpha():
+                    name += db[i:][i_adding]
                     i_adding += 1
                 else:
                     name = name.lower()
@@ -17,13 +19,13 @@ def reinstall(db):
                     i += i_adding
                     break
                     
-        # elif db[i].isnumeric() == True:
+        # elif db[i].isnumeric():
         #     for j in range(len(db[i:])-1):
-        #         if db[i:][j].isnumeric() == True:
+        #         if db[i:][j].isnumeric():
         #             final_data_base_values += db[i][j]
         #         else:
         #             i += 1
-                    
+
         else:
             i += 1
     return final_data_base_keys
