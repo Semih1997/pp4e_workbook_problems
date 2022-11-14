@@ -17,3 +17,4 @@ for line in attendees_file.readlines():
 attendees_file.close()
 sorted_notes = sorted(notes,key=lambda item: item[1],reverse=True)
 print(notes)
+print(key)
