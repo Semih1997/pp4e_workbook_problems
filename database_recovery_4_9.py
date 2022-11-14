@@ -12,6 +12,7 @@ def reinstall(db):
                 if db[i:][i_adding].isalpha():
                     name += db[i:][i_adding]
                     i_adding += 1
+                    print(name)
                 else:
                     name = name.lower()
                     name = name.capitalize()
