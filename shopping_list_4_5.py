@@ -20,5 +20,4 @@ def readable(str):
             i += 1
     return "\n".join(last_list)
 print(readable("LemOn,   gaRlic, PASta "),"\n")
-
 print(readable("CheeSe, cHeesE,    CHEESE "))
