@@ -1,0 +1,10 @@
+Q1: What does RAM stand for?
+A) Right Access Memory
+B) Real Actual Memory
+C) Read Access Memory
+D) Random Access Memory
+Q2: What is the electronic circuitry within a computer that executes instructions that make up a computer program?
+A) CPU
+B) RAM
+C) ROM
+D) Motherboard
