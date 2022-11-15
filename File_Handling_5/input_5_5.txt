@@ -1,0 +1,5 @@
+Bilgin Irmak , 60 , 55 , 63
+Aleyna Catak , 80 , 60 , 50
+Bayram Durak , 70 , 30 , 90
+Gorkem Yildiz , 70 , 90 , 50
+Naz Kaya , 100 , 80 , 20
