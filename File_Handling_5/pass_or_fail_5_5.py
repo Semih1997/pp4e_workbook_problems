@@ -16,7 +16,6 @@ def pass_or_fail(input_txt,output_txt):
         pass_or_fail_list.append((name,sirname,",",pass_fail))
     for i in range(len(pass_or_fail_list)):
         "".join(str(x) for x in pass_or_fail_list[i])
-    print(pass_or_fail_list)
     with open(output_txt,"w") as output:
         for line in pass_or_fail_list:
             output.write(str(line[0])+ " " +str(line[1])+str(line[2])+str(line[3])+"\n")
