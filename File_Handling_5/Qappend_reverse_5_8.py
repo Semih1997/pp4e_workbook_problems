@@ -6,7 +6,7 @@ def append_reverse(input_txt):
             sir_name = line.split()[1]
             names = (name,sir_name)
             name_list.append(names)
-    with open(input_txt,"a") as input_text:
+    with open(input_txt,"a") as input_text:  #append("a") method appends to the end of the text file.
         for line in name_list:
             input_text.write("\n"+line[1]+" "+line[0])
     return name_list

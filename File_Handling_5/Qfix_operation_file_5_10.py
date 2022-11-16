@@ -5,7 +5,7 @@ def fix_operation_file(input_text,output_text):
     process = ""
     results = []
     for line in input_txt:
-        process += line.rstrip()
+        process += line.rstrip() # delete the \n at the end of the line.
         seperator += 1
         if seperator == 3:
             output_txt.write(process)
