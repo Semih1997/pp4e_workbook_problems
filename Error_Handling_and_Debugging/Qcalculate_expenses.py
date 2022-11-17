@@ -1,12 +1,13 @@
+def sum_prices(shopping_list):
+    total = 0
+    for (item, price) in shopping_list:
+        total += price
+    return round(total, 2)
+
 def calculate_expenses(shopping_lists):
     total_list = []
     for shopping_list in shopping_lists:
         try:
-            def sum_prices(shopping_list):
-                total = 0
-                for (item, price) in shopping_list:
-                    total += price
-                return round(total, 2)
             total = 0
             total = sum_prices(shopping_list)
             total_list.append(total)
