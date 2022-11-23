@@ -2,14 +2,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# function that applies min max normalization to given numpy array
 def min_max_normalization(arr):
     min_value = arr.min()
     max_value = arr.max()
 
     return (arr - min_value) / (max_value - min_value)
 
-# function that plots and saves the figure with given data, title and output path
 def plot_data(x, y, title, output_path):
     plt.figure()
     plt.plot(x, y)
